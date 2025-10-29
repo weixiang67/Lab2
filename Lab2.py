@@ -31,7 +31,7 @@ def calc_min_max_temperature(num_list):
     return [minimum,maximum]
 
 def sort_temperature(num_list):
-    num_list.sort()
+    num_list.sort() 
     asc = num_list
     return asc
 
@@ -39,13 +39,12 @@ def calc_median_temperature(asc):
     n = len(asc)
     mid = n//2
     if n%2 == 0:
-        return ((asc[mid-1]+asc[mid])/2) #rem that array starts from 0
+        return (asc[mid-1]+asc[mid])/2 #rem that array starts from 0
     else:
         return asc[mid]
 
 if __name__ == "__main__": 
     main()
-
 
 
 
